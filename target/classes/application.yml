@@ -1,0 +1,24 @@
+spring:
+  datasource: # ������ݿ�
+    # mysql��������
+    driver-class-name: com.mysql.jdbc.Driver # ������
+    url: jdbc:mysql://localhost:3306/demo2?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true # mysql���ӵ�ַ
+    username: root # �û��� root
+    password: LIZHONGJIE199608
+
+  jpa:
+    database: mysql # ���ݿ�
+    hibernate:
+      ddl-auto: update # �����������ݿ�,��ȥ���ݿ⽨��Ҳ����,��table��Ҫ��Ӧ��
+    show-sql: false # ����ʾsql ���
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss # ��Ŀͬһʱ�䷵�ظ�ʽ
+    time-zone: GMT+8 # ʱ�����
+
+##################### Spring Boot WEB start #####################
+# Server HTTP port.
+server:
+  port: 8888  # ���ʶ˿�
+  tomcat:
+    uri-encoding: utf-8 # ����
