@@ -1,24 +1,32 @@
 spring:
-  datasource: # ¿ò¼ÜÊı¾İ¿â
-    # mysqlÁ¬½ÓÅäÖÃ
-    driver-class-name: com.mysql.jdbc.Driver # Çı¶¯Ãû
-    url: jdbc:mysql://localhost:3306/demo2?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true # mysqlÁ¬½ÓµØÖ·
-    username: root # ÓÃ»§Ãû root
+  datasource:
+
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo2?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
     password: LIZHONGJIE199608
 
   jpa:
-    database: mysql # Êı¾İ¿â
+    database: mysql
     hibernate:
-      ddl-auto: update # ·´ÏòÉú³ÉÊı¾İ¿â,ÏÈÈ¥Êı¾İ¿â½¨±íÒ²¿ÉÒÔ,µ«tableÃûÒª¶ÔÓ¦ÉÏ
-    show-sql: false # ²»ÏÔÊ¾sql Óï¾ä
+      ddl-auto: update
+    show-sql: false
 
   jackson:
-    date-format: yyyy-MM-dd HH:mm:ss # ÏîÄ¿Í¬Ò»Ê±¼ä·µ»Ø¸ñÊ½
-    time-zone: GMT+8 # Ê±¼ä±àÂë
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
 
 ##################### Spring Boot WEB start #####################
 # Server HTTP port.
 server:
-  port: 8888  # ·ÃÎÊ¶Ë¿Ú
+  port: 8888
   tomcat:
-    uri-encoding: utf-8 # ±àÂë
+    uri-encoding: utf-8
+
+# é…ç½®securityçš„è´¦å·å¯†ç 
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: 123

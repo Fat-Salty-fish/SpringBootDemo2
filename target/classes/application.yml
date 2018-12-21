@@ -1,24 +1,32 @@
 spring:
-  datasource: # ������ݿ�
-    # mysql��������
-    driver-class-name: com.mysql.jdbc.Driver # ������
-    url: jdbc:mysql://localhost:3306/demo2?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true # mysql���ӵ�ַ
-    username: root # �û��� root
+  datasource:
+
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo2?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
     password: LIZHONGJIE199608
 
   jpa:
-    database: mysql # ���ݿ�
+    database: mysql
     hibernate:
-      ddl-auto: update # �����������ݿ�,��ȥ���ݿ⽨��Ҳ����,��table��Ҫ��Ӧ��
-    show-sql: false # ����ʾsql ���
+      ddl-auto: update
+    show-sql: false
 
   jackson:
-    date-format: yyyy-MM-dd HH:mm:ss # ��Ŀͬһʱ�䷵�ظ�ʽ
-    time-zone: GMT+8 # ʱ�����
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
 
 ##################### Spring Boot WEB start #####################
 # Server HTTP port.
 server:
-  port: 8888  # ���ʶ˿�
+  port: 8888
   tomcat:
-    uri-encoding: utf-8 # ����
+    uri-encoding: utf-8
+
+# 配置security的账号密码
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: 123

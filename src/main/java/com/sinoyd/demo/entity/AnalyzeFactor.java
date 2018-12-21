@@ -1,4 +1,4 @@
-package com.copy.demo.entity;
+package com.sinoyd.demo.entity;
 
 
 import com.sinoyd.frame.base.entity.BaseEntity;
@@ -18,13 +18,10 @@ public class AnalyzeFactor implements BaseEntity
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id; //因子id
 
-    @Column
     private String factorName ; //因子名
 
-    @Column
     private String factorCode ; //因子编号
 
-    @Column
     private Boolean isDeleted = false ;  //用于判断是否已经被删除 即删除时作假删除 仅修改此值即可
 
 }
