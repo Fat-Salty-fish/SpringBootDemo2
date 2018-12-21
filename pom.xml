@@ -75,17 +75,7 @@
     </build>
 
     <repositories>
-        <repository>
-            <id>maven-central</id>
-            <name>maven-central</name>
-            <url>http://nexus.local:8081/repository/maven-public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
+
     </repositories>
 
 </project>
