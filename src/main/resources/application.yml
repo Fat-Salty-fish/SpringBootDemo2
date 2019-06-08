@@ -4,7 +4,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/demo2?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
     username: root
-    password: LIZHONGJIE199608
+    password: 123456
 
   jpa:
     database: mysql
@@ -23,10 +23,3 @@ server:
   tomcat:
     uri-encoding: utf-8
 
-# 配置security的账号密码
-security:
-  basic:
-    enabled: true
-  user:
-    name: admin
-    password: 123
